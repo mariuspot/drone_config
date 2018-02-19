@@ -1,0 +1,156 @@
+# diff all
+
+# version
+# Betaflight / OMNIBUSF4 (OBF4) 3.2.3 Dec 11 2017 / 07:56:31 (cb962eda1) MSP API: 1.36
+
+# reset configuration to default settings
+defaults nosave
+
+# name
+
+# resources
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature -OSD
+feature LED_STRIP
+
+# beeper
+
+# map
+
+# serial
+serial 0 64 115200 57600 0 115200
+
+# led
+led 0 7,6::AW:0
+led 1 7,7::AW:0
+
+# color
+
+# mode_color
+
+# aux
+aux 0 1 0 900 1300
+aux 1 2 0 1300 1700
+aux 2 13 3 900 1700
+
+# adjrange
+adjrange 0 0 1 900 2100 12 1
+
+# rxrange
+rxrange 0 987 2011
+rxrange 1 987 2011
+rxrange 2 987 2011
+rxrange 3 987 2011
+
+# vtx
+
+# rxfail
+
+# master
+set serialrx_provider = SBUS
+set motor_pwm_protocol = DSHOT300
+set thr_corr_value = 150
+set align_board_yaw = 45
+set vbat_min_cell_voltage = 28
+set vbat_warning_cell_voltage = 32
+set pid_process_denom = 1
+
+# profile
+profile 0
+
+set vbat_pid_gain = ON
+set p_pitch = 80
+set i_pitch = 54
+set d_pitch = 40
+set p_roll = 44
+set i_roll = 33
+set d_roll = 22
+set p_yaw = 80
+set d_yaw = 10
+set p_level = 65
+set i_level = 65
+set d_level = 100
+set level_limit = 65
+
+# profile
+profile 1
+
+set vbat_pid_gain = ON
+set p_pitch = 80
+set i_pitch = 54
+set d_pitch = 40
+set p_roll = 44
+set i_roll = 33
+set d_roll = 22
+set p_yaw = 80
+set d_yaw = 10
+set p_level = 65
+set i_level = 65
+set d_level = 100
+set level_limit = 65
+
+# profile
+profile 2
+
+set vbat_pid_gain = ON
+set p_pitch = 80
+set i_pitch = 54
+set d_pitch = 40
+set p_roll = 44
+set i_roll = 33
+set d_roll = 22
+set p_yaw = 80
+set d_yaw = 10
+set p_level = 65
+set i_level = 65
+set d_level = 100
+set level_limit = 65
+
+# restore original profile selection
+profile 2
+
+# rateprofile
+rateprofile 0
+
+set rc_rate = 70
+set rc_rate_yaw = 70
+set thr_mid = 75
+set thr_expo = 30
+set roll_srate = 85
+set pitch_srate = 85
+set yaw_srate = 80
+
+# rateprofile
+rateprofile 1
+
+set rc_rate = 85
+set rc_rate_yaw = 85
+set thr_mid = 75
+set thr_expo = 30
+set roll_srate = 85
+set pitch_srate = 85
+set yaw_srate = 80
+
+# rateprofile
+rateprofile 2
+
+set thr_mid = 75
+set thr_expo = 30
+set roll_srate = 85
+set pitch_srate = 85
+set yaw_srate = 80
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 
