@@ -1,0 +1,212 @@
+# diff all
+
+# version
+# Betaflight / MATEKF405 (MKF4) 3.2.3 Dec 11 2017 / 07:51:34 (cb962eda1) MSP API: 1.36
+
+# reset configuration to default settings
+defaults nosave
+
+# name
+
+# resources
+resource MOTOR 5 NONE
+resource SERIAL_TX 11 A15
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature LED_STRIP
+
+# beeper
+
+# map
+
+# serial
+serial 30 32 115200 57600 0 115200
+
+# led
+led 0 1,7::AW:0
+led 1 2,7::AW:0
+led 2 3,7::AW:0
+led 3 4,7::AW:0
+led 4 5,7::AW:0
+led 5 6,7::AW:0
+led 6 7,7::AW:0
+led 7 8,7::AW:0
+
+# color
+
+# mode_color
+
+# aux
+aux 0 1 0 900 1300
+aux 1 2 0 1300 1700
+aux 2 13 3 900 1700
+
+# adjrange
+adjrange 0 0 1 900 2100 12 1
+
+# rxrange
+rxrange 0 987 2011
+rxrange 1 987 2011
+rxrange 2 987 2011
+rxrange 3 987 2011
+
+# vtx
+
+# rxfail
+
+# master
+set acc_trim_pitch = 20
+set acc_trim_roll = -16
+set motor_pwm_protocol = DSHOT600
+set thr_corr_value = 3
+set pid_process_denom = 1
+set osd_units = IMPERIAL
+set osd_vbat_pos = 2498
+set osd_rssi_pos = 22
+set osd_tim_1_pos = 2518
+set osd_tim_2_pos = 33
+set osd_flymode_pos = 2509
+set osd_throttle_pos = 129
+set osd_vtx_channel_pos = 200
+set osd_crosshairs = 0
+set osd_ah_sbar = 200
+set osd_ah_pos = 200
+set osd_current_pos = 97
+set osd_mah_drawn_pos = 111
+set osd_craft_name_pos = 396
+set osd_gps_speed_pos = 66
+set osd_gps_lon_pos = 82
+set osd_gps_lat_pos = 65
+set osd_gps_sats_pos = 386
+set osd_home_dir_pos = 302
+set osd_home_dist_pos = 303
+set osd_compass_bar_pos = 266
+set osd_altitude_pos = 161
+set osd_pid_roll_pos = 322
+set osd_pid_pitch_pos = 354
+set osd_pid_yaw_pos = 386
+set osd_debug_pos = 1
+set osd_power_pos = 47
+set osd_pidrate_profile_pos = 418
+set osd_warnings_pos = 329
+set osd_avg_cell_voltage_pos = 76
+set osd_pit_ang_pos = 257
+set osd_rol_ang_pos = 289
+set osd_battery_usage_pos = 392
+set osd_disarmed_pos = 138
+set osd_nheading_pos = 311
+set osd_nvario_pos = 279
+set osd_esc_tmp_pos = 82
+set osd_esc_rpm_pos = 83
+set osd_stat_max_spd = OFF
+set osd_stat_min_batt = OFF
+set osd_stat_min_rssi = OFF
+set osd_stat_max_curr = OFF
+set osd_stat_used_mah = OFF
+set osd_stat_bbox = OFF
+set osd_stat_bb_no = OFF
+set osd_stat_tim_2 = OFF
+
+# profile
+profile 0
+
+set vbat_pid_gain = ON
+set p_pitch = 45
+set i_pitch = 30
+set d_pitch = 23
+set p_roll = 35
+set i_roll = 12
+set d_roll = 18
+set p_yaw = 80
+set i_yaw = 40
+set d_yaw = 10
+set p_level = 60
+set i_level = 65
+set d_level = 100
+set level_limit = 68
+
+# profile
+profile 1
+
+set vbat_pid_gain = ON
+set p_pitch = 45
+set i_pitch = 30
+set d_pitch = 23
+set p_roll = 35
+set i_roll = 12
+set d_roll = 18
+set p_yaw = 80
+set i_yaw = 40
+set d_yaw = 10
+set p_level = 60
+set i_level = 65
+set d_level = 100
+set level_limit = 68
+
+# profile
+profile 2
+
+set vbat_pid_gain = ON
+set p_pitch = 45
+set i_pitch = 30
+set d_pitch = 23
+set p_roll = 35
+set i_roll = 12
+set d_roll = 18
+set p_yaw = 80
+set i_yaw = 40
+set d_yaw = 10
+set p_level = 60
+set i_level = 65
+set d_level = 100
+set level_limit = 68
+
+# restore original profile selection
+profile 2
+
+# rateprofile
+rateprofile 0
+
+set rc_rate = 60
+set rc_rate_yaw = 60
+set thr_mid = 40
+set thr_expo = 20
+set roll_srate = 85
+set pitch_srate = 85
+set yaw_srate = 80
+
+# rateprofile
+rateprofile 1
+
+set rc_rate = 70
+set rc_rate_yaw = 70
+set thr_mid = 40
+set thr_expo = 20
+set roll_srate = 85
+set pitch_srate = 85
+set yaw_srate = 80
+
+# rateprofile
+rateprofile 2
+
+set rc_rate = 90
+set rc_rate_yaw = 75
+set thr_mid = 40
+set thr_expo = 20
+set roll_srate = 85
+set pitch_srate = 85
+set yaw_srate = 80
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 
